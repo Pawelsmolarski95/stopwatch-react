@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import styles from './Stopwatch.module.scss';
+import styles from './Stopwatch.module.scss';
 import Timer from '../Timer/Timer';
 import Button from '../Button/Button';
 
@@ -38,7 +38,7 @@ const Stopwatch = () => {
     };
  
 return (
-    <div>
+    <div className={styles.stopwatch}>
         <Timer time={time}/>
         <Button timeStart={timeStart} timeStop={timeStop} resetTime={resetTime} />            
     </div>
